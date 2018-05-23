@@ -35,8 +35,7 @@ class ConnexionController extends Controller
     public function formulaire(Request $requete)
     {
         $connexionform = new connexion();
-        $connexionform->setEmail('example@example');
-        $connexionform->setMdp('Entrez votre mot de passe');
+
         $formulaire = $this->createFormBuilder($connexionform)
             ->add('email', TextType::class)
             ->add('mdp', TextType::class)
