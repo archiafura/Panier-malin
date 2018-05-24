@@ -1,29 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Formulaire d'inscription{% endblock %}
+{% block title %}Hello !{% endblock %}
 
 {% block body %}
 
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div id="cadreonglet" class="col-sm-12 col-lg-12">
-                    <img src="/img/logo11.png" id="logo"   />
 
-
-                </div>
-
-
-            </div>
-    </header>
 
     <h1>S'inscrire</h1>
 
 
+<form>
+    <div class="form-group">
 
     {{ form_start(formulaire) }}
 
     <div>
+
     {{ form_label(formulaire.email)  }}
     {{ form_errors(formulaire.email) }}
     {{ form_widget(formulaire.email) }}
