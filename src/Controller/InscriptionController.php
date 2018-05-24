@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Dell
- * Date: 17/05/2018
- * Time: 09:51
- */
 
 namespace App\Controller;
-use App\Entity\Connexion;
+use App\Entity\Inscription;
 use Doctrine\DBAL\Types\DateTimeType;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -17,28 +11,33 @@ use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 
-
-class ConnexionController extends Controller
+class InscriptionController extends Controller
 {
     /**
-     * @Route("/connexion", name="connexion")
+     * @Route("/inscription", name="inscription")
      */
     public function index()
     {
-        return $this->render('connexion/index.html.twig', [
-            'controller_name' => 'ConnexionController',
+        return $this->render('inscription/index.html.twig', [
+            'controller_name' => 'InscriptionController',
         ]);
     }
 
+
     /**
-     * @Route("/connexion/formulaire", name="connexion_formulaire")
+     * @Route("/inscription/formulaire", name="inscription_formulaire")
      */
+
     public function formulaire(Request $requete)
     {
-        $connexionform = new connexion();
+        $inscription = new inscription();
 
-        $formulaire = $this->createFormBuilder($connexionform)
+        $formulaire = $this->createFormBuilder($inscription)
+            ->add('nom', TextType::class)
+            ->add('prenom', TextType::class)
+            ->add('pseudo', TextType::class)
             ->add('email', TextType::class)
+            ->add('adresse', TextType::class)
             ->add('mdp', TextType::class)
             ->add('envoyer', SubmitType::class, array('label' => "je m'enregistre"))
             ->getForm();
@@ -47,27 +46,26 @@ class ConnexionController extends Controller
 
         if ($formulaire->isSubmitted() && $formulaire->isValid()) {
 
-            $connexionform = $formulaire->getData();
+            $inscription = $formulaire->getData();
             $envoiBDD = $this->getDoctrine()->getManager();
-            $envoiBDD->persist($connexionform);
+            $envoiBDD->persist($inscription);
             $envoiBDD->flush();
 
-            return $this->redirectToRoute('connexionformOK');
+            return $this->redirectToRoute('inscriptionformOK');
         }
 
-        return $this->render('connexion/index.html.twig',
+        return $this->render('inscription/index.html.twig',
             array(
                 'formulaire' => $formulaire->createView(),
             ));
     }
 
     /**
-     * @Route("/connexionformOK", name="connexionformOK")
+     * @Route("/inscriptionformOK", name="inscriptionformOK")
      */
 
     public function formulaireOK()
     {
-        return $this->render('connexion/connexionformOK.html.twig');
+        return $this->render('inscription/inscriptionformOK.html.twig');
     }
-
 }

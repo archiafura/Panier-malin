@@ -8,7 +8,6 @@
             <div class="row">
                 <div id="cadreonglet" class="col-sm-12 col-lg-12">
                     <img src="img/logo11.png" id="logo"   />
-                    <span id="titreheader"><h1>Espace Personnel</h1></span>
                     <span id="liens">
                         <a href="compte.php">Compte</a>
                         <a href=""><img src="img/hamper-filled.png" id="panier"></a>
@@ -17,78 +16,8 @@
                     </span>
 
                 </div>
-                <div id="deconnexion" class="col-sm-6 col-lg-6">
-                    <h1><a href="deconnexion.php">Déconnexion</a></h1>
-                </div>
+
             </div>
     </header>
-    <div class="row">
-        <div class="col-md-3 col-lg-3">
-            <div class="container">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab"  href="#tableau">Tableau de bord du compte</a></li>
-                    <li><a data-toggle="tab"  href="#compte">Informations du compte</a></li>
-                    <li><a data-toggle="tab"  href="#adresse">Carnet d'adresses</a></li>
-                    <li><a data-toggle="tab"  href="#commande">Mes commandes</a></li>
-                    <li><a data-toggle="tab"  href="#facturation">Ententes de facturation</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div id="contenu-onglet" class="col-sm-9 col-lg-9">
-            <div class="tab-content">
-                <div id="tableau" class="tab-pane fade in active">
-                    <h1>Mon tableau de bord</h1>
-                    <h3>Mes informations de contact</h3>
-                    <h3>Mes adresses</h3>
-                </div>
-                <div id="compte" class="tab-pane fade">
-                    <h1>Éditer les informations du compte</h1>
-                    <h3>Informations du compte.</h3>
-                    <form name="compte" method="post" action="">
-                        <label for="prénom">Prénom</label><br/>
-                        <input type="text" name="prénom" placeholder="Prénom"><br/>
-                        <label for="nom">Nom</label><br/>
-                        <input type="text" name="nom" placeholder="Nom"><br/>
-                        <label for="Email">E-mail</label><br/>
-                        <input type="email" name="email" placeholder="E-mail"><br/>
-                        <label for="mdp">Mot de passe</label><br/>
-                        <input type="password" name="mdp" placeholder="Mot de passe"><br/>
-                        <label for="cmdp">Confirmation du mot de passe</label><br/>
-                        <input type="password" name="cmdp" placeholder="Confirmation du mot de passe"><br/>
-                        <input type="submit" id="sauvegarder" value="Sauvegarder">
-                    </form>
-                </div>
 
-                <div id="adresse" class="tab-pane fade">
-                    <h1>Carnet d'adresses</h1>
-                    <h3>Adresses par défaut</h3>
-                    <h4>Adresse de facturation par défaut</h4>
-                    <h4>Adresse de livraison par défaut</h4>
-                    <form>
-                        <input type="submit" id="adresse" value="Ajouter une nouvelle adresse">
-
-                    </form>
-                </div>
-                <div id="commande" class="tab-pane fade">
-                    <h1>Historique de mes commandes</h1>
-                    <hr/>
-                    <h3>commande #1</h3>
-                    <p>Détail de ma commande</p>
-                    <hr/>
-                </div>
-                <div id="facturation" class="tab-pane fade">
-                    <h1>Historique de mes factures</h1>
-                    <hr/>
-                    <h3>Facture #1</h3>
-                    <p>Détail de ma facture #1</p>
-                    <hr/>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-    </div>
 {% endblock %}

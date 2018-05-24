@@ -1,6 +1,6 @@
 #cadreonglet {
     background-color: #fce0e0;
-    }
+}
 #liens {
     font-size: 1.9em;
     position: relative;
@@ -10,7 +10,7 @@
 #liens a {
     padding: 0.2em;
     position: relative;
-    left: 49%;
+    left: 65%;
 }
 
 a { color: #000000;}
@@ -26,37 +26,8 @@ a { color: #000000;}
     top: 5%;
 }
 
-@font-face {
-    font-family: 'moon_flowerregular';
-    src: url('../font/moon_flower-webfont.woff2') format('woff2'),
-    url('../font/moon_flower-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+#footer{
+    background-color: #fce0e0;
 }
-@font-face {
-    font-family: 'dk_lemon_yellow_sunregular';
-    src: url('../font/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
-    url('../font/dk_lemon_yellow_sun-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-h1 {
-    font-family: 'moon_flowerregular';
-    font-weight: bold;
-    font-size: 4em;
-}
-
-
-#titreheader {
-    position: relative;
-    display:  inline-flex;
-    text-align:center;
-    left: 25%;
-}
-
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hc3NldHMvY3NzL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxpQkFBaUIsd0JBQXdCLENBQUMiLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNjb250ZW51LW9uZ2xldCB7ZmxvYXQ6IHJpZ2h0ICFpbXBvcnRhbnQ7fVxyXG5cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gLi9hc3NldHMvY3NzL3N0eWxlLmNzcyJdLCJzb3VyY2VSb290IjoiIn0=*/

@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formulaire d'inscription{% endblock %}
+
+{% block body %}
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="cadreonglet" class="col-sm-12 col-lg-12">
+                    <img src="/img/logo11.png" id="logo"   />
+
+
+                </div>
+
+
+            </div>
+    </header>
+
+    <h1>S'inscrire</h1>
+
+
+
+    {{ form_start(formulaire) }}
+
+    <div>
+    {{ form_label(formulaire.email)  }}
+    {{ form_errors(formulaire.email) }}
+    {{ form_widget(formulaire.email) }}
+    </div>
+    <br>
+    <div>
+        {{ form_label(formulaire.nom)  }}
+        {{ form_errors(formulaire.nom) }}
+        {{ form_widget(formulaire.nom) }}
+    </div>
+    <br>
+
+    <div>
+        {{ form_label(formulaire.prenom)  }}
+        {{ form_errors(formulaire.prenom) }}
+        {{ form_widget(formulaire.prenom) }}
+    </div>
+    <br>
+
+    <div>
+        {{ form_label(formulaire.pseudo)  }}
+        {{ form_errors(formulaire.pseudo) }}
+        {{ form_widget(formulaire.pseudo) }}
+    </div>
+    <br>
+
+    <div>
+        {{ form_label(formulaire.adresse)  }}
+        {{ form_errors(formulaire.adresse) }}
+        {{ form_widget(formulaire.adresse) }}
+    </div>
+    <br>
+
+    <div>
+        {{ form_label(formulaire.mdp)  }}
+        {{ form_errors(formulaire.mdp) }}
+        {{ form_widget(formulaire.mdp) }}
+    </div>
+    <br>
+
+
+    {{ form_end(formulaire) }}
+
+{% endblock %}
