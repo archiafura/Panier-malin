@@ -12,26 +12,25 @@
 
 
 
-{% block body %}
-
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div id="cadreonglet" class="col-sm-12 col-lg-12">
-                    <img src="img/logo11.png" id="logo"   />
-                    <span id="liens">
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="cadreonglet" class="col-sm-12 col-lg-12">
+                <img src="/img/logo11.png" id="logo"   />
+                <span id="liens">
                         <a href="compte.php">Compte</a>
-                        <a href=""><img src="img/hamper-filled.png" id="panier"></a>
+                        <a href=""><img src="/img/hamper-filled.png" id="panier"></a>
                         <a href="connexion.php">Connexion</a>
 
                     </span>
 
-                </div>
-                <div id="deconnexion" class="col-sm-6 col-lg-6">
-                    <h1><a href="deconnexion.php">Déconnexion</a></h1>
-                </div>
             </div>
-    </header>
+        </div>
+</header>
+
+{% block body %}
+
+
 
 
 {% endblock %}
