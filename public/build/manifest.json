@@ -1,4 +1,10 @@
 {
   "build/app.js": "/build/app.js",
-  "build/app.css": "/build/app.css"
+  "build/app.css": "/build/app.css",
+  "build/fonts/dk_lemon_yellow_sun-webfont.woff": "/build/fonts/dk_lemon_yellow_sun-webfont.24d16d4d.woff",
+  "build/fonts/dk_lemon_yellow_sun-webfont.woff2": "/build/fonts/dk_lemon_yellow_sun-webfont.0efe3072.woff2",
+  "build/fonts/moon_flower-webfont.woff": "/build/fonts/moon_flower-webfont.b186aaf7.woff",
+  "build/fonts/moon_flower-webfont.woff2": "/build/fonts/moon_flower-webfont.870de917.woff2",
+  "build/fonts/roboto-regular-webfont.woff": "/build/fonts/roboto-regular-webfont.745185bf.woff",
+  "build/fonts/roboto-regular-webfont.woff2": "/build/fonts/roboto-regular-webfont.d1739920.woff2"
 }
