@@ -5,6 +5,7 @@
     <title>{% block title %}{% endblock %}</title>
     {% block stylesheets %}
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
         <script type="text/javascript" src={{ asset('build/app.js') }}></script>
         <link rel ="stylesheet" type="text/css" href={{ asset("build/app.css") }}>
     {% endblock %}
@@ -13,44 +14,33 @@
 
 
 <header>
-    <div class="container-fluid">
-        <div class="row">
-            <div id="cadreonglet" class="col-sm-12 col-lg-12">
-                <img src="/img/logo11.png" id="logo"   />
+
+            <div id="cadreonglet">
+                <img src="/img/logo11-final.png" id="logo" />
                 <span id="liens">
                         <a href="compte.php">Compte</a>
                         <a href=""><img src="/img/hamper-filled.png" id="panier"></a>
                         <a href="connexion.php">Connexion</a>
 
                     </span>
-
-
+            </div>
 </header>
+
 
 {% block body %}
 
-
-
-
 {% endblock %}
 
-
-
-
-<footer id="footer">
-    <div id="rose" class="row">
-        <div id="blue" class="offset-lg-1 col-sm-4 col-lg-2"><h2>RESEAUX SOCIAUX</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam aspernatur blanditiis consequuntur dolor dolore earum esse hic ipsa labore magni nam natus praesentium quae quaerat quod similique, ullam vel.
+<footer id="footer" class="container-fluid">
+    <div id="menubasdepage" class="row">
+        <div id="menufooter" class="offset-lg-2 col-sm-4 col-lg-2"><h5>A PROPOS</h5><br/><h5>QUI SOMMES NOUS? </h5><br/><h5> CONTACTEZ-NOUS </h5><br/><h5>PARTENAIRES</h5><br/>
         </div>
-        <div id="blue" class="offset-lg-1 col-sm-4 col-lg-2"><h2>QUI SOMMES NOUS</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur cumque doloremque doloribus iusto molestiae mollitia ut vitae? Doloribus eveniet ex laboriosam libero magni, minus natus quis repellat sapiente sunt.
+        <div id="social" class="offset-lg-1 col-sm-4 col-lg-2"><img src="/img/facebookLogo.png"><img src="/img/instagramLogo.png"><img src="/img/twitterLogo.png">
         </div>
-        <div id="blue" class="offset-lg-3 col-sm-4 col-lg-2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41101.894107878936!2d1.0484701373485654!3d49.920045177734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0a207670619f9%3A0xaea20a3d78418545!2s76200+Dieppe!5e0!3m2!1sfr!2sfr!4v1526308758965" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div id="carte" class="offset-lg-1 col-sm-4 col-lg-2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41101.894107878936!2d1.0484701373485654!3d49.920045177734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0a207670619f9%3A0xaea20a3d78418545!2s76200+Dieppe!5e0!3m2!1sfr!2sfr!4v1526308758965" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
 </footer>
-
-</div>
-
-
 
 
 {% block javascripts %}

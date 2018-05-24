@@ -1,5 +1,10 @@
+header {
+    width:100%;
+}
+
 #cadreonglet {
     background-color: #fce0e0;
+
 }
 #liens {
     font-size: 1.9em;
@@ -10,7 +15,7 @@
 #liens a {
     padding: 0.2em;
     position: relative;
-    left: 50%;
+    left: 65%;
     font-family: 'robotoregular';
 
 }
@@ -22,9 +27,9 @@ a {
 
 
 #logo {
-    width: 15%;
     position: relative;
     padding: 1%;
+
 }
 #panier {
     position: relative;
@@ -75,6 +80,7 @@ h1 {
 
 #footer{
     background-color: #fce0e0;
+    width: 100%;
 }
 
 #social img {
@@ -147,6 +153,10 @@ li:hover {
 
 #produitMoment{
     text-align: center;
+}
+
+#social {
+    padding-top: 5%;
 }
 
 
