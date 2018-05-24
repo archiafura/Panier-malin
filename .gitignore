@@ -38,3 +38,5 @@ yarn-error.log
 /.web-server-pid
 ###< symfony/web-server-bundle ###
 /public/build
+/public/build/
+/public/build/*
