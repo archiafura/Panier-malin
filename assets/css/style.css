@@ -23,7 +23,13 @@ header {
 a {
     color: #000000;
     text-decoration: none;
-    list-style-type: none;}
+    list-style-type: none;
+}
+
+a:hover{
+    text-decoration: none;
+   color: #62cb40;
+}
 
 
 #logo {
@@ -87,6 +93,10 @@ h1 {
     padding: 1em;
 }
 
+
+
+/*      STEVAN     */
+
 /*???*/
 #contenu-onglet {float: right !important;}
 
@@ -100,7 +110,7 @@ nav {
 
 #menu {
     font-size:5px;
-    font-family:"Roboto","Helvetica","Arial";
+    font-family:"robotoregular","Helvetica","Arial";
     width:100%;
     display: flex;
     list-style: none;
@@ -125,15 +135,21 @@ li:hover {
     display: flex;
     justify-content: center;
     width: 100%;
+    ;
 
 }
 #imageRecherche{
-    /*background-image: url("../img/market_background.jpg");*/
+    background-image: url("/img/market_background.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 80%;
+    padding: 50px 0px 50px 0px
 }
 
+#inputSearch{
+    display: flex;
+    justify-content: center;
+}
 /* BARRE DE RECHERCHE */
 
 #search{
@@ -141,12 +157,18 @@ li:hover {
     justify-content: center;
 }
 
+#search2{
+    display: flex;
+    justify-content: center;
+}
 
 /* TITRE ' QUE CHERCHEZ VOUS ' */
 
 #cherchezVous{
+    font-size: 80px;
     color: white;
     text-align: center;
+    font-family:"dk_lemon_yellow_sunregular","Helvetica","Arial";
 }
 
 /* TITRE ' PRODUIT DU MOMENT ' */
