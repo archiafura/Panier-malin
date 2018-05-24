@@ -39,7 +39,7 @@ class InscriptionController extends Controller
             ->add('email', TextType::class)
             ->add('adresse', TextType::class)
             ->add('mdp', TextType::class)
-            ->add('envoyer', SubmitType::class, array('label' => "je m'enregistre"))
+            ->add('envoyer', SubmitType::class, array('label' => "Envoyer"))
             ->getForm();
 
         $formulaire->handleRequest($requete);
