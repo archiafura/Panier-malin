@@ -98,7 +98,7 @@ nav {
 
 #menu {
     font-size:5px;
-    font-family:"Roboto","Helvetica","Arial";
+    font-family:"robotoregular","Helvetica","Arial";
     width:100%;
     display: flex;
     list-style: none;
@@ -123,6 +123,7 @@ li:hover {
     display: flex;
     justify-content: center;
     width: 100%;
+    ;
 
 }
 #imageRecherche{
@@ -130,8 +131,13 @@ li:hover {
     background-size: 100%;
     background-repeat: no-repeat;
     width: 80%;
+    padding: 50px 0px 50px 0px
 }
 
+#inputSearch{
+    display: flex;
+    justify-content: center;
+}
 /* BARRE DE RECHERCHE */
 
 #search{
@@ -147,8 +153,10 @@ li:hover {
 /* TITRE ' QUE CHERCHEZ VOUS ' */
 
 #cherchezVous{
+    font-size: 80px;
     color: white;
     text-align: center;
+    font-family:"dk_lemon_yellow_sunregular","Helvetica","Arial";
 }
 
 /* TITRE ' PRODUIT DU MOMENT ' */
