@@ -16,9 +16,9 @@
 <header>
 
             <div id="cadreonglet">
-                <img src="/img/logo11-final.png" id="logo" />
+                <a href="{{ path('accueil') }}"><img src="/img/logo11-final.png" id="logo" /></a>
                 <span id="liens">
-                        <a href="compte.php">Compte</a>
+                        <a href="{{ path('inscription_formulaire') }}">S'inscrire</a>
                         <a href=""><img src="/img/hamper-filled.png" id="panier"></a>
                         <a href="{{ path('connexion_formulaire') }}">Connexion</a>
 
