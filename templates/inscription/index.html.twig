@@ -6,51 +6,51 @@
 
 
 
-    <h1>S'inscrire</h1>
+    <h1 id="titlinscript">S'inscrire</h1>
 
 
-<form>
-    <div class="form-group">
+<form  action="" method="post"></form>
+    <div id="inscform" class="form-group">
 
     {{ form_start(formulaire) }}
 
     <div>
 
-    {{ form_label(formulaire.email)  }}
+        <label for="mdp"><h5>Email</h5></label>
     {{ form_errors(formulaire.email) }}
     {{ form_widget(formulaire.email) }}
     </div>
     <br>
     <div>
-        {{ form_label(formulaire.nom)  }}
+        <label for="mdp"><h5>Nom</h5></label>
         {{ form_errors(formulaire.nom) }}
         {{ form_widget(formulaire.nom) }}
     </div>
     <br>
 
     <div>
-        {{ form_label(formulaire.prenom)  }}
+        <label for="mdp"><h5>Prenom</h5></label>
         {{ form_errors(formulaire.prenom) }}
         {{ form_widget(formulaire.prenom) }}
     </div>
     <br>
 
     <div>
-        {{ form_label(formulaire.pseudo)  }}
+        <label for="mdp"><h5>Pseudo</h5></label>
         {{ form_errors(formulaire.pseudo) }}
         {{ form_widget(formulaire.pseudo) }}
     </div>
     <br>
 
     <div>
-        {{ form_label(formulaire.adresse)  }}
+        <label for="mdp"><h5>Adresse</h5></label>
         {{ form_errors(formulaire.adresse) }}
         {{ form_widget(formulaire.adresse) }}
     </div>
     <br>
 
     <div>
-        {{ form_label(formulaire.mdp)  }}
+        <label for="mdp"><h5>Mot de Passe</h5></label>
         {{ form_errors(formulaire.mdp) }}
         {{ form_widget(formulaire.mdp) }}
     </div>
@@ -59,4 +59,7 @@
 
     {{ form_end(formulaire) }}
 
+    </div>
+
 {% endblock %}
+
