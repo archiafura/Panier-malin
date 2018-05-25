@@ -19,7 +19,7 @@ class FormAjoutProduitPro
     private $duree;
     private $horaire;
     private $conseil;
-    private $img;
+    private $image;
 
     public function getId()
     {
@@ -77,9 +77,9 @@ class FormAjoutProduitPro
     /**
      * @return mixed
      */
-    public function getImg()
+    public function getImage()
     {
-        return $this->img;
+        return $this->image;
     }
 
     /**
@@ -93,9 +93,9 @@ class FormAjoutProduitPro
     /**
      * @param mixed $img
      */
-    public function setImg($img): void
+    public function setImage($image): void
     {
-        $this->img = $img;
+        $this->image = $image;
     }
 
     /**
