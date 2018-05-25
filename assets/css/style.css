@@ -41,16 +41,16 @@ a:hover{
 
 @font-face {
     font-family: 'moon_flowerregular';
-    src: url('../font/moon_flower-webfont.woff2') format('woff2'),
-    url('../font/moon_flower-webfont.woff') format('woff');
+    src: url('../../public/font/moon_flower-webfont.woff2') format('woff2'),
+    url('../../public/font/moon_flower-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'dk_lemon_yellow_sunregular';
-    src: url('../font/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
-    url('../font/dk_lemon_yellow_sun-webfont.woff') format('woff');
+    src: url('../../public/font/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
+    url('../../public/font/dk_lemon_yellow_sun-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -58,14 +58,14 @@ a:hover{
 
 @font-face {
     font-family: 'robotoregular';
-    src: url('../font/roboto-regular-webfont.woff2') format('woff2'),
-    url('../font/roboto-regular-webfont.woff') format('woff');
+    src: url('../../public/font/roboto-regular-webfont.woff2') format('woff2'),
+    url('../../public/font/roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-h1 {
+h1  {
     font-family: 'moon_flowerregular';
     font-weight: bold;
     font-size: 4em;
@@ -81,10 +81,14 @@ h1 {
 
 #footer{
     background-color: #fce0e0;
+
 }
 
 #social img {
-    padding: 1em;
+    padding: 0.2em;
+    flex-direction: row;
+text-align: center;
+
 }
 
 
@@ -176,7 +180,11 @@ li:hover {
 }
 
 #plus{
-    font-family:"robotoregular","Helvetica","Arial";
+    font-family: 'dk_lemon_yellow_sunregular';
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #62cb40;
+    margin: 5px;
 }
 
 /*///////////ESPACE PRO !!//////////////////////
@@ -312,11 +320,53 @@ li:hover {
     height: 90%;
 }
 
-#articleProRight{
+#articleProRight {
     width: 100%;
     height: 100%;
     background-color: #67b825;
     border-radius: 20px;
+}
+
+
+
+/*............DORIS..........*/
+
+#inscform{
+    margin-top: 5px;
+    border: 2px solid #62cb40;
+    border-radius: 15px;
+    background-color: #62cb40;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+    margin-right: 25%;
+    margin-left: 25%;
+
+}
+
+#titlinscript{
+    text-align: center;
+}
+
+
+h5{
+    font-family: 'moon_flowerregular';
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#carte{
+    height: auto;
+}
+
+#presentation{
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 20%;
+
 }
 
 #addProduitPro form #form div{
@@ -336,5 +386,4 @@ li:hover {
     background:none;
     color: white;
 }
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hc3NldHMvY3NzL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxpQkFBaUIsd0JBQXdCLENBQUMiLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNjb250ZW51LW9uZ2xldCB7ZmxvYXQ6IHJpZ2h0ICFpbXBvcnRhbnQ7fVxyXG5cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gLi9hc3NldHMvY3NzL3N0eWxlLmNzcyJdLCJzb3VyY2VSb290IjoiIn0=*/
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hc3NldHMvY3NzL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxpQkFBaUIsd0JBQXdCLENBQUMiLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNjb250ZW51LW9uZ2xldCB7ZmxvYXQ6IHJpZ2h0ICFpbXBvcnRhbnQ7fVxyXG5cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gLi9hc3NldHMvY3NzL3N0eWxlLmNzcyJdLCJzb3VyY2VSb290IjoiIn0=*/
