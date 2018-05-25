@@ -65,12 +65,16 @@
         </section>
 
         <section id="sectionEProRight">
+            <p class="titreArticlePro">
+                ajouter un produit
+            </p>
             <article id="articleProRight">
-                <p class="titreArticlePro">
-                    ajouter un produit
-                </p>
+
                 <div id="addProduitPro">
-                    !!!!!!!!!FORMUALIRE!!!!!!!!!!!
+
+                    {{ form_start(formulaire) }}
+                    {{ form_widget(formulaire) }}
+                    {{ form_end(formulaire) }}
                 </div>
             </article>
 
