@@ -336,14 +336,17 @@ li:hover {
     border: 2px solid #62cb40;
     border-radius: 15px;
     background-color: #62cb40;
+    text-align: center;
+    margin: 5%;
 
+
+}
+
+#form_nom, #form_email, #form_adresse, #form_pseudo, #form_mdp, #form_prenom{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5%;
-    margin-right: 25%;
-    margin-left: 25%;
+   margin-left: 510px;
+
 
 }
 
