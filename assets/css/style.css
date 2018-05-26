@@ -41,16 +41,16 @@ a:hover{
 
 @font-face {
     font-family: 'moon_flowerregular';
-    src: url('../../public/font/moon_flower-webfont.woff2') format('woff2'),
-    url('../../public/font/moon_flower-webfont.woff') format('woff');
+    src: url('../font/moon_flower-webfont.woff2') format('woff2'),
+    url('../font/moon_flower-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'dk_lemon_yellow_sunregular';
-    src: url('../../public/font/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
-    url('../../public/font/dk_lemon_yellow_sun-webfont.woff') format('woff');
+    src: url('../font/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
+    url('../font/dk_lemon_yellow_sun-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -58,8 +58,8 @@ a:hover{
 
 @font-face {
     font-family: 'robotoregular';
-    src: url('../../public/font/roboto-regular-webfont.woff2') format('woff2'),
-    url('../../public/font/roboto-regular-webfont.woff') format('woff');
+    src: url('../font/roboto-regular-webfont.woff2') format('woff2'),
+    url('../font/roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -329,6 +329,47 @@ li:hover {
 
 
 
+@media screen and (max-width: 1200px)
+
+{
+
+    #conteneurEspacePro{
+        width: 100%;
+    }
+
+    #sectionEProLeft, #sectionEProMiddle, #sectionEProRight{
+        width: 30%;
+    }
+
+    .titreArticlePro{
+        line-height: 40px;
+    }
+
+    .txtPdt{
+        line-height: 20px;
+    }
+
+}
+
+@media screen and (max-width: 800px)
+
+{
+
+    #conteneurEspacePro{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #sectionEProLeft, #sectionEProMiddle, #sectionEProRight{
+        width: 95%;
+        margin-top: 40px;
+        border-radius: 0px;
+    }
+
+}
+
+
 /*............DORIS..........*/
 
 #inscform{
@@ -389,4 +430,7 @@ h5{
     background:none;
     color: white;
 }
+
+
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hc3NldHMvY3NzL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxpQkFBaUIsd0JBQXdCLENBQUMiLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNjb250ZW51LW9uZ2xldCB7ZmxvYXQ6IHJpZ2h0ICFpbXBvcnRhbnQ7fVxyXG5cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gLi9hc3NldHMvY3NzL3N0eWxlLmNzcyJdLCJzb3VyY2VSb290IjoiIn0=*/
