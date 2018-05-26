@@ -83,7 +83,9 @@
                     ajouter un evenement
                 </p>
                 <div id="addProduitPro">
-                    !!!!!!!!!FORMUALIRE!!!!!!!!!!!
+                    {#{{ form_start(formulaireEvent) }}#}
+                    {#{{ form_widget(formulaireEvent) }}#}
+                    {#{{ form_end(formulaireEvent) }}#}
                 </div>
             </article>
         </section>
