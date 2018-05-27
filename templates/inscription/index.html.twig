@@ -14,13 +14,7 @@
 
     {{ form_start(formulaire) }}
 
-    <div>
 
-        <label for="mdp"><h5>Email</h5></label>
-    {{ form_errors(formulaire.email) }}
-    {{ form_widget(formulaire.email) }}
-    </div>
-    <br>
     <div>
         <label for="mdp"><h5>Nom</h5></label>
         {{ form_errors(formulaire.nom) }}
@@ -49,13 +43,38 @@
     </div>
     <br>
 
+        <div>
+
+            <label for="zip"><h5>Code Postal</h5></label>
+            {{ form_errors(formulaire.zip) }}
+            {{ form_widget(formulaire.zip) }}
+        </div>
+        <br>
+        <div>
+
+            <label for="mdp"><h5>Email</h5></label>
+            {{ form_errors(formulaire.email) }}
+            {{ form_widget(formulaire.email) }}
+        </div>
+        <br>
     <div>
         <label for="mdp"><h5>Mot de Passe</h5></label>
         {{ form_errors(formulaire.mdp) }}
         {{ form_widget(formulaire.mdp) }}
     </div>
     <br>
+        <div>
 
+            <label for="STATUT"><h5>Statut</h5></label>
+        {{ form_errors(formulaire.statut) }}
+        {{ form_widget(formulaire.statut) }}
+    </div>
+    <br>
+        <label for="interet"><h5>Centre d'intérêt</h5></label>
+        {{ form_errors(formulaire.interet) }}
+        {{ form_widget(formulaire.interet) }} Fruits
+    </div>
+    <br>
 
     {{ form_end(formulaire) }}
 
