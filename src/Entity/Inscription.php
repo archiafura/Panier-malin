@@ -46,6 +46,12 @@ class Inscription
      */
     private $adresse;
 
+    private $zip;
+
+    private $statut;
+
+    private $interet;
+
 
     public function getId()
     {
@@ -144,4 +150,64 @@ class Inscription
         $this->adresse = $adresse;
         return $this;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getZip()
+    {
+        return $this->zip;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id): void
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @param mixed $zip
+     */
+    public function setZip($zip): void
+    {
+        $this->zip = $zip;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStatut()
+    {
+        return $this->statut;
+    }
+
+    /**
+     * @param mixed $statut
+     */
+    public function setStatut($statut): void
+    {
+        $this->statut = $statut;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInteret()
+    {
+        return $this->interet;
+    }
+
+    /**
+     * @param mixed $interet
+     */
+    public function setInteret($interet): void
+    {
+        $this->interet = $interet;
+    }
+
+
+
+
 }
