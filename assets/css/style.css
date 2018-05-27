@@ -383,7 +383,7 @@ li:hover {
 
 }
 
-#form_nom, #form_email, #form_adresse, #form_pseudo, #form_mdp, #form_prenom{
+#form_nom, #form_email, #form_adresse, #form_pseudo, #form_mdp, #form_prenom, #form_zip, #form_statut, #form_interet{
     display: flex;
     flex-direction: column;
    margin-left: 510px;
