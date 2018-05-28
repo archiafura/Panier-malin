@@ -1,30 +1,33 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello {{ controller_name }}!{% endblock %}
-
 {% block body %}
     <div class="container-fluid">
         <main>
+            {{ form_start(formulaire) }}
             <div class="row">
 
 
                 <div class="col-sm-12 col-lg-2">
                     <h3>Mes infos</h3>
                     <div id="rosecompte">
-                        <form name="compte" method="post" action="">
-                            <label for="prénom">Prénom</label><br/>
-                            <input type="text" name="prénom" placeholder="Prénom"><br/>
+                        <label for="prénom">Prénom</label><br/>
+                        {{ form_errors(formulaire.prenominfos) }}
+                        {{ form_widget(formulaire.prenominfos) }}
                             <label for="nom">Nom</label><br/>
-                            <input type="text" name="nom" placeholder="Nom"><br/>
+                        {{ form_errors(formulaire.nominfos) }}
+                        {{ form_widget(formulaire.nominfos) }}
                             <label for="tel">Tél</label><br/>
-                            <input type="text" name="tel" placeholder="Tél"><br/>
+                        {{ form_errors(formulaire.telephone) }}
+                        {{ form_widget(formulaire.telephone) }}
                             <label for="Email">E-mail</label><br/>
-                            <input type="email" name="email" placeholder="E-mail"><br/>
+                        {{ form_errors(formulaire.emailinfos) }}
+                        {{ form_widget(formulaire.emailinfos) }}
                             <label for="mdp">Mot de passe</label><br/>
-                            <input type="password" name="mdp" placeholder="Mot de passe"><br/>
+                        {{ form_errors(formulaire.mdpinfos) }}
+                        {{ form_widget(formulaire.mdpinfos) }}
                             <label for="cmdp">Confirmation du mot de passe</label><br/>
-                            <input type="password" name="cmdp" placeholder="Confirmation du mot de passe"><br/>
-                        </form>
+                        {{ form_errors(formulaire.confirmmdpinfos) }}
+                        {{ form_widget(formulaire.confirmmdpinfos) }}
                     </div>
                 </div>
                 <div class="offset-lg-1 col-sm-12 col-lg-5">
@@ -47,7 +50,6 @@
                         <div id="droite">
                             <p>Ville</p>
                             <p>Code postal</p>
-                            <p>Pays</p>
                         </div>
                         <h5>Adresse de facturation</h5>
                         <div id="gauche">
@@ -58,7 +60,6 @@
                         <div id="droite">
                             <p>Ville</p>
                             <p>Code postal</p>
-                            <p>Pays</p>
                         </div>
 
 
@@ -72,25 +73,23 @@
                     <div id="vert">
 
                         <article>
-                            <form name="compte" method="post" action="">
                                 <label for="prénom">Prénom</label><br/>
-                                <input type="text" name="prénom" placeholder="Prénom"><br/>
-                                <label for="nom">Nom</label><br/>
-                                <input type="text" name="nom" placeholder="Nom"><br/>
-                                <label for="adresse">Adresse de livraison</label><br/>
-                                <input type="text" name="adresse" placeholder="Adresse de livraison"><br/>
+                                {{ form_errors(formulaire.prenomlivraison) }}
+                                {{ form_widget(formulaire.prenomlivraison) }}
+                            <label for="nom">Nom</label><br/>
+                            {{ form_errors(formulaire.nomlivraison) }}
+                            {{ form_widget(formulaire.nomlivraison) }}
+                            <label for="adresse">Adresse de livraison</label><br/>
+                            {{ form_errors(formulaire.livraison) }}
+                            {{ form_widget(formulaire.livraison) }}
+
                                 <label for="cp">Code Postal</label><br/>
-                                <input type="text" name="cp" placeholder="Code postal"><br/>
+                            {{ form_errors(formulaire.cplivraison) }}
+                            {{ form_widget(formulaire.cplivraison) }}
                                 <label for="ville">Ville</label><br/>
-                                <input type="texte" name="ville" placeholder="Ville"><br/>
-                                <label for="choice">Sélectionnez un pays :
-                                </label>
-                                <select id="choix" class="form-control input-sm" name="choice">
-                                    <option value="">-- Selectionnez --</option>
-                                    <option value="france">France</option>
-                                </select>
-                                <input type="submit" id="button" value="Sauvegarder">
-                            </form>
+                            {{ form_errors(formulaire.villelivraison) }}
+                            {{ form_widget(formulaire.villelivraison) }}
+
                         </article>
                     </div>
                 </div>
@@ -98,7 +97,9 @@
             <div class="row">
 
                 <div id="vertbutton" class="col-sm-12 col-lg-2">
-                    <button type="submit" id="button" value="Mettre à jour les infos">Mettre à jour les infos</button>
+                    <button type="submit" id="button" value="Mettre à jour les infos">
+                        {{ form_widget(formulaire.envoyer, { 'label': 'Mettre à jour les infos' }) }}
+                    </button>
                 </div>
                 <div class="offset-lg-1 col-sm-12 col-lg-5">
                     <h3 id="historique">Historique des mes commandes</h3>
@@ -119,29 +120,28 @@
                     <div id="vertfacture">
 
                         <article>
-                            <form name="compte" method="post" action="">
                                 <label for="prénom">Prénom</label><br/>
-                                <input type="text" name="prénom" placeholder="Prénom"><br/>
-                                <label for="nom">Nom</label><br/>
-                                <input type="text" name="nom" placeholder="Nom"><br/>
+                            {{ form_errors(formulaire.prenomfacturation) }}
+                            {{ form_widget(formulaire.prenomfacturation) }}
+                            <label for="nom">Nom</label><br/>
+                            {{ form_errors(formulaire.nomfacturation) }}
+                            {{ form_widget(formulaire.nomfacturation) }}
+
                                 <label for="adresse">Adresse de facturation</label><br/>
-                                <input type="text" name="adresse" placeholder="Adresse de facturation"><br/>
-                                <label for="cp">Code Postal</label><br/>
-                                <input type="text" name="cp" placeholder="Code postal"><br/>
+                            {{ form_errors(formulaire.facturation) }}
+                            {{ form_widget(formulaire.facturation) }}
+                            <label for="cp">Code Postal</label><br/>
+                            {{ form_errors(formulaire.cpfacturation) }}
+                            {{ form_widget(formulaire.cpfacturation) }}
+
                                 <label for="ville">Ville</label><br/>
-                                <input type="texte" name="ville" placeholder="Ville"><br/>
-                                <label for="choice">Sélectionnez un pays :
-                                </label>
-                                <select id="choix" class="form-control input-sm" name="choice">
-                                    <option value="">-- Selectionnez --</option>
-                                    <option value="france">France</option>
-                                </select>
-                                <input type="submit" id="button" value="Sauvegarder">
-                            </form>
+                            {{ form_errors(formulaire.villefacturation) }}
+                            {{ form_widget(formulaire.villefacturation) }}
                         </article>
                     </div>
                 </div>
             </div>
+            {{ form_end(formulaire) }}
         </main>
     </div>
 {% endblock %}
