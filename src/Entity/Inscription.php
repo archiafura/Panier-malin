@@ -46,11 +46,27 @@ class Inscription
      */
     private $adresse;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+
     private $zip;
+
+    /**
+     * @ORM\Column(type="string")
+     */
 
     private $statut;
 
+    /**
+     * @ORM\Column(type="string")
+     */
+
     private $interet;
+
+    private $newsletter;
+    private $perimetre_activite;
+
 
 
     public function getId()
@@ -162,7 +178,7 @@ class Inscription
     /**
      * @param mixed $id
      */
-    public function setId($id): void
+    public function setId(integer $id): self
     {
         $this->id = $id;
     }
@@ -170,7 +186,7 @@ class Inscription
     /**
      * @param mixed $zip
      */
-    public function setZip($zip): void
+    public function setZip(integer $zip): self
     {
         $this->zip = $zip;
     }
@@ -186,7 +202,7 @@ class Inscription
     /**
      * @param mixed $statut
      */
-    public function setStatut($statut): void
+    public function setStatut(string $statut): self
     {
         $this->statut = $statut;
     }
@@ -202,9 +218,41 @@ class Inscription
     /**
      * @param mixed $interet
      */
-    public function setInteret($interet): void
+    public function setInteret(string $interet): self
     {
         $this->interet = $interet;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNewsletter()
+    {
+        return $this->newsletter;
+    }
+
+    /**
+     * @param mixed $newsletter
+     */
+    public function setNewsletter(bool $newsletter)
+    {
+        $this->newsletter = $newsletter;
+    }
+
+    /**
+     * @param mixed $perimetre_activite
+     */
+    public function setPerimetreActivite(integer $perimetre_activite): self
+    {
+        $this->perimetre_activite = $perimetre_activite;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPerimetreActivite()
+    {
+        return $this->perimetre_activite;
     }
 
 

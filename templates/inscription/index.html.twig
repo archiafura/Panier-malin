@@ -20,28 +20,28 @@
         {{ form_errors(formulaire.nom) }}
         {{ form_widget(formulaire.nom) }}
     </div>
-    <br>
+
 
     <div>
         <label for="mdp"><h5>Prenom</h5></label>
         {{ form_errors(formulaire.prenom) }}
         {{ form_widget(formulaire.prenom) }}
     </div>
-    <br>
+
 
     <div>
         <label for="mdp"><h5>Pseudo</h5></label>
         {{ form_errors(formulaire.pseudo) }}
         {{ form_widget(formulaire.pseudo) }}
     </div>
-    <br>
+
 
     <div>
         <label for="mdp"><h5>Adresse</h5></label>
         {{ form_errors(formulaire.adresse) }}
         {{ form_widget(formulaire.adresse) }}
     </div>
-    <br>
+
 
         <div>
 
@@ -49,32 +49,46 @@
             {{ form_errors(formulaire.zip) }}
             {{ form_widget(formulaire.zip) }}
         </div>
-        <br>
+
         <div>
 
             <label for="mdp"><h5>Email</h5></label>
             {{ form_errors(formulaire.email) }}
             {{ form_widget(formulaire.email) }}
         </div>
-        <br>
+
     <div>
         <label for="mdp"><h5>Mot de Passe</h5></label>
-        {{ form_errors(formulaire.mdp) }}
-        {{ form_widget(formulaire.mdp) }}
+        {{ form_errors(formulaire.password) }}
+        {{ form_widget(formulaire.password
+        ) }}
     </div>
-    <br>
+
         <div>
 
             <label for="STATUT"><h5>Statut</h5></label>
         {{ form_errors(formulaire.statut) }}
         {{ form_widget(formulaire.statut) }}
     </div>
-    <br>
+
+        <div>
         <label for="interet"><h5>Centre d'intérêt</h5></label>
-        {{ form_errors(formulaire.interet) }}
-        {{ form_widget(formulaire.interet) }}
+    {{ form_errors(formulaire.interet) }}
+    {{ form_widget(formulaire.interet) }}
     </div>
-    <br>
+
+    <div>
+    <label for="newsletter"><h5>Newletter</h5></label>
+    {{ form_errors(formulaire.newsletter) }}
+    {{ form_widget(formulaire.newsletter) }}
+    </div>
+
+    <div>
+    <label for="newsletter"><h5>Perimètre autorisé en Km</h5></label>
+    {{ form_errors(formulaire.perimetre_activite) }}
+    {{ form_widget(formulaire.perimetre_activite) }}
+    </div>
+
 
     {{ form_end(formulaire) }}
 
