@@ -4,71 +4,144 @@
 
 {% block body %}
     <div class="container-fluid">
+        <main>
+            <div class="row">
 
 
-        <div class="row">
-            <div class="col-md-3 col-lg-3">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab"  href="#tableau">Tableau de bord du compte</a></li>
-                    <li><a data-toggle="tab"  href="#compte">Informations du compte</a></li>
-                    <li><a data-toggle="tab"  href="#adresse">Carnet d'adresses</a></li>
-                    <li><a data-toggle="tab"  href="#commande">Mes commandes</a></li>
-                    <li><a data-toggle="tab"  href="#facturation">Ententes de facturation</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div id="contenu-onglet" class="col-sm-9 col-lg-9">
-                <div class="tab-content">
-                    <div id="tableau" class="tab-pane fade in active">
-                        <h1>Mon tableau de bord</h1>
-                        <h3>Mes informations de contact</h3>
-                        <h3>Mes adresses</h3>
-                    </div>
-                    <div id="compte" class="tab-pane fade">
-                        <h1>Éditer les informations du compte</h1>
-                        <h3>Informations du compte.</h3>
+                <div class="col-sm-12 col-lg-2">
+                    <h3>Mes infos</h3>
+                    <div id="rosecompte">
                         <form name="compte" method="post" action="">
                             <label for="prénom">Prénom</label><br/>
                             <input type="text" name="prénom" placeholder="Prénom"><br/>
                             <label for="nom">Nom</label><br/>
                             <input type="text" name="nom" placeholder="Nom"><br/>
+                            <label for="tel">Tél</label><br/>
+                            <input type="text" name="tel" placeholder="Tél"><br/>
                             <label for="Email">E-mail</label><br/>
                             <input type="email" name="email" placeholder="E-mail"><br/>
                             <label for="mdp">Mot de passe</label><br/>
                             <input type="password" name="mdp" placeholder="Mot de passe"><br/>
                             <label for="cmdp">Confirmation du mot de passe</label><br/>
                             <input type="password" name="cmdp" placeholder="Confirmation du mot de passe"><br/>
-                            <input type="submit" id="sauvegarder" value="Sauvegarder">
                         </form>
                     </div>
+                </div>
+                <div class="offset-lg-1 col-sm-12 col-lg-5">
+                    <h3>Mon Tableau de bord</h3>
+                    <div id="rosetableau">
+                        <p id="bienvenue">Bonjour, @UTILISATEUR !
+                            Depuis le tableau de bord 'Mon compte', vous pouvez avoir un aperçu de vos récentes activités et mettre à jour les informations de votre compte. Sélectionnez un cadre sur cette page pour voir ou modifier les informations.</p>
+                        <h4>Mes infos de contact</h4>
+                        <p>Nom</p>
+                        <p>Prénom</p>
+                        <p>E-mail</p>
+                        <p>Tél</p>
+                        <h4>Carnet d'adresses</h4>
+                        <h5>Adresse de livraison</h5>
+                        <div id="gauche">
+                            <p>Nom</p>
+                            <p>Prénom</p>
+                            <p>Adresse</p>
+                        </div>
+                        <div id="droite">
+                            <p>Ville</p>
+                            <p>Code postal</p>
+                            <p>Pays</p>
+                        </div>
+                        <h5>Adresse de facturation</h5>
+                        <div id="gauche">
+                            <p>Nom</p>
+                            <p>Prénom</p>
+                            <p>Adresse</p>
+                        </div>
+                        <div id="droite">
+                            <p>Ville</p>
+                            <p>Code postal</p>
+                            <p>Pays</p>
+                        </div>
 
-                    <div id="adresse" class="tab-pane fade">
-                        <h1>Carnet d'adresses</h1>
-                        <h3>Adresses par défaut</h3>
-                        <h4>Adresse de facturation par défaut</h4>
-                        <h4>Adresse de livraison par défaut</h4>
-                        <form>
-                            <input type="submit" id="adresse" value="Ajouter une nouvelle adresse">
 
-                        </form>
+
+
                     </div>
-                    <div id="commande" class="tab-pane fade">
-                        <h1>Historique de mes commandes</h1>
+                </div>
+
+                <div class="offset-lg-1 col-sm-12 col-lg-3">
+                    <h3>ADRESSE DE LIVRAISON</h3>
+                    <div id="vert">
+
+                        <article>
+                            <form name="compte" method="post" action="">
+                                <label for="prénom">Prénom</label><br/>
+                                <input type="text" name="prénom" placeholder="Prénom"><br/>
+                                <label for="nom">Nom</label><br/>
+                                <input type="text" name="nom" placeholder="Nom"><br/>
+                                <label for="adresse">Adresse de livraison</label><br/>
+                                <input type="text" name="adresse" placeholder="Adresse de livraison"><br/>
+                                <label for="cp">Code Postal</label><br/>
+                                <input type="text" name="cp" placeholder="Code postal"><br/>
+                                <label for="ville">Ville</label><br/>
+                                <input type="texte" name="ville" placeholder="Ville"><br/>
+                                <label for="choice">Sélectionnez un pays :
+                                </label>
+                                <select id="choix" class="form-control input-sm" name="choice">
+                                    <option value="">-- Selectionnez --</option>
+                                    <option value="france">France</option>
+                                </select>
+                                <input type="submit" id="button" value="Sauvegarder">
+                            </form>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div id="vertbutton" class="col-sm-12 col-lg-2">
+                    <button type="submit" id="button" value="Mettre à jour les infos">Mettre à jour les infos</button>
+                </div>
+                <div class="offset-lg-1 col-sm-12 col-lg-5">
+                    <h3 id="historique">Historique des mes commandes</h3>
+                    <div id="rose">
                         <hr/>
                         <h3>commande #1</h3>
                         <p>Détail de ma commande</p>
                         <hr/>
-                    </div>
-                    <div id="facturation" class="tab-pane fade">
-                        <h1>Historique de mes factures</h1>
-                        <hr/>
                         <h3>Facture #1</h3>
                         <p>Détail de ma facture #1</p>
                         <hr/>
+
+
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-sm-12 col-lg-3">
+                    <h3>ADRESSE DE FACTURATION</h3>
+                    <div id="vertfacture">
+
+                        <article>
+                            <form name="compte" method="post" action="">
+                                <label for="prénom">Prénom</label><br/>
+                                <input type="text" name="prénom" placeholder="Prénom"><br/>
+                                <label for="nom">Nom</label><br/>
+                                <input type="text" name="nom" placeholder="Nom"><br/>
+                                <label for="adresse">Adresse de facturation</label><br/>
+                                <input type="text" name="adresse" placeholder="Adresse de facturation"><br/>
+                                <label for="cp">Code Postal</label><br/>
+                                <input type="text" name="cp" placeholder="Code postal"><br/>
+                                <label for="ville">Ville</label><br/>
+                                <input type="texte" name="ville" placeholder="Ville"><br/>
+                                <label for="choice">Sélectionnez un pays :
+                                </label>
+                                <select id="choix" class="form-control input-sm" name="choice">
+                                    <option value="">-- Selectionnez --</option>
+                                    <option value="france">France</option>
+                                </select>
+                                <input type="submit" id="button" value="Sauvegarder">
+                            </form>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
 {% endblock %}
