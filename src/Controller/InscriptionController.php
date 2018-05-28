@@ -47,7 +47,7 @@ class InscriptionController extends Controller
             ->add('mdp', PasswordType::class, array('label' => 'MOT DE PASSE',))
             ->add('mdp', RepeatedType::class, array('label' => 'REPETER MOT DE PASSE',))
             ->add('statut', ChoiceType::class, array('choices' => array('Particulier' => 'Particulier', 'Professionnel' =>'Professionnel',)))
-            ->add('interet', CheckboxType::class, array('label' => 'fruits', ))
+            ->add('interet', ChoiceType::class, array('choices' => array('Fruits' => array('À consommer tel quel' => 'À consommer tel quel', 'À transformer (confitures,compotes..)' => 'À transformer (confitures,compotes..)',), 'Confection de paniers' => array('Paniers de fruits' => 'Paniers de fruits', 'Paniers de légumes' => 'Paniers de légumes', 'Paniers mixte' => 'Paniers mixte',), 'Légumes' => 'Légumes', 'Artisanats' => 'Artisanats',)))
             ->add('envoyer', SubmitType::class, array('label' => "Envoyer"))
             ->getForm();
 
