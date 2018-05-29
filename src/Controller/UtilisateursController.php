@@ -13,6 +13,7 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Translation\Translator;
 
 class UtilisateursController extends Controller
 {
@@ -21,9 +22,13 @@ class UtilisateursController extends Controller
      */
     public function index()
     {
+        $translator = new Translator('en_EN');
+
         return $this->render('utilisateurs/index.html.twig', [
             'controller_name' => 'UtilisateursController',
         ]);
+
+
     }
 
     /**
