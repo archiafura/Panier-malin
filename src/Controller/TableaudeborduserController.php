@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controller;
-use App\Entity\FormInfosPerso;
+use App\Entity\Tableaudeborduser;
 use Doctrine\DBAL\Types\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\TelType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
@@ -30,7 +30,7 @@ class TableaudeborduserController extends Controller
 
     public function formulaire(Request $requete)
     {
-        $infosform = new forminfosperso();
+        $infosform = new Tableaudeborduser();
 
         $formulaire = $this->createFormBuilder($infosform)
             ->add('prenominfos', TextType::class, array('label' => 'PRENOM',) )
