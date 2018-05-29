@@ -37,7 +37,7 @@ class FormAjoutProduitPro
     /**
      * @param mixed $conseil
      */
-    public function setConseil(string $conseil): void
+    public function setConseil(string $conseil)
     {
         $this->conseil = $conseil;
     }
@@ -53,7 +53,7 @@ class FormAjoutProduitPro
     /**
      * @param mixed $duree
      */
-    public function setDuree(string $duree): void
+    public function setDuree(string $duree)
     {
         $this->duree = $duree;
     }
@@ -69,7 +69,7 @@ class FormAjoutProduitPro
     /**
      * @param mixed $horaire
      */
-    public function setHoraire(string $horaire): void
+    public function setHoraire(string $horaire)
     {
         $this->horaire = $horaire;
     }
@@ -85,7 +85,7 @@ class FormAjoutProduitPro
     /**
      * @param mixed $id
      */
-    public function setId($id): void
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -93,7 +93,7 @@ class FormAjoutProduitPro
     /**
      * @param mixed $img
      */
-    public function setImage($image): void
+    public function setImage($image)
     {
         $this->image = $image;
     }
@@ -109,7 +109,7 @@ class FormAjoutProduitPro
     /**
      * @param mixed $typePdt
      */
-    public function setTypePdt(string $typePdt): void
+    public function setTypePdt(string $typePdt)
     {
         $this->typePdt = $typePdt;
     }

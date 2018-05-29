@@ -13,7 +13,7 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\SearchType;
 
-class FormAjoutPdtProController extends Controller
+class FormAjoutProduitProController extends Controller
 {
     /**
      * @Route("/form/ajout/pdt/pro", name="form_ajout_pdt_pro")
@@ -21,7 +21,7 @@ class FormAjoutPdtProController extends Controller
     public function index()
     {
         return $this->render('form_ajout_pdt_pro/index.html.twig', [
-            'controller_name' => 'FormAjoutPdtProController',
+            'controller_name' => 'FormAjoutProduitProController',
         ]);
     }
 
