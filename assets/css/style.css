@@ -278,6 +278,41 @@ display: flex;
     display: flex;
     justify-content: center;
 }
+/* PAGE LISTE PRODUIT GILDAS */
+#cartedetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 3%;
+}
+
+#carrevert {
+    background-color: #b9e199;
+    height: 100%;
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+#texteinterieur {
+
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+
+}
+
+#barquettesfraises {
+    float: left;
+    left: 10%;
+    position: relative;
+    padding: 1%;
+}
+
+
+
+
 
 /*///////////ESPACE PRO !!//////////////////////
 ///////////////////////////////////////////////
