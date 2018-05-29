@@ -46,6 +46,28 @@ class Inscription
      */
     private $adresse;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+
+    private $zip;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+
+    private $statut;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+
+    private $interet;
+
+    private $newsletter;
+    private $perimetre_activite;
+
+
 
     public function getId()
     {
@@ -144,4 +166,96 @@ class Inscription
         $this->adresse = $adresse;
         return $this;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getZip()
+    {
+        return $this->zip;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId(integer $id): self
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @param mixed $zip
+     */
+    public function setZip(integer $zip): self
+    {
+        $this->zip = $zip;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStatut()
+    {
+        return $this->statut;
+    }
+
+    /**
+     * @param mixed $statut
+     */
+    public function setStatut(string $statut): self
+    {
+        $this->statut = $statut;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInteret()
+    {
+        return $this->interet;
+    }
+
+    /**
+     * @param mixed $interet
+     */
+    public function setInteret(string $interet): self
+    {
+        $this->interet = $interet;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNewsletter()
+    {
+        return $this->newsletter;
+    }
+
+    /**
+     * @param mixed $newsletter
+     */
+    public function setNewsletter(bool $newsletter)
+    {
+        $this->newsletter = $newsletter;
+    }
+
+    /**
+     * @param mixed $perimetre_activite
+     */
+    public function setPerimetreActivite(integer $perimetre_activite): self
+    {
+        $this->perimetre_activite = $perimetre_activite;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPerimetreActivite()
+    {
+        return $this->perimetre_activite;
+    }
+
+
+
+
 }
