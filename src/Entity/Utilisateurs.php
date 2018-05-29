@@ -32,9 +32,8 @@ class Utilisateurs
     private $adresse;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=100)
      */
-
     private $email;
 
     /**
@@ -43,22 +42,22 @@ class Utilisateurs
     private $zip;
 
     /**
-     * @ORM\Column(type="string", length=25)
+     * @ORM\Column(type="string", length=100)
      */
     private $pseudo;
 
     /**
-     * @ORM\Column(type="string", length=60)
+     * @ORM\Column(type="string", length=100)
      */
     private $password;
 
     /**
-     * @ORM\Column(type="array", nullable=true)
+     * @ORM\Column(type="string", length=255)
      */
     private $interet;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="string", length=100)
      */
     private $statut;
 
@@ -70,7 +69,7 @@ class Utilisateurs
     /**
      * @ORM\Column(type="integer")
      */
-    private $perimetre_activite;
+    private $perimetreActivite;
 
     public function getId()
     {
@@ -109,6 +108,18 @@ class Utilisateurs
     public function setAdresse(string $adresse): self
     {
         $this->adresse = $adresse;
+
+        return $this;
+    }
+
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(string $email): self
+    {
+        $this->email = $email;
 
         return $this;
     }
@@ -161,12 +172,12 @@ class Utilisateurs
         return $this;
     }
 
-    public function getStatut(): ?bool
+    public function getStatut(): ?string
     {
         return $this->statut;
     }
 
-    public function setStatut(bool $statut): self
+    public function setStatut(string $statut): self
     {
         $this->statut = $statut;
 
@@ -187,30 +198,13 @@ class Utilisateurs
 
     public function getPerimetreActivite(): ?int
     {
-        return $this->perimetre_activite;
+        return $this->perimetreActivite;
     }
 
-    public function setPerimetreActivite(int $perimetre_activite): self
+    public function setPerimetreActivite(int $perimetreActivite): self
     {
-        $this->perimetre_activite = $perimetre_activite;
+        $this->perimetreActivite = $perimetreActivite;
 
         return $this;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getEmail()
-    {
-        return $this->email;
-    }
-
-    /**
-     * @param mixed $email
-     */
-    public function setEmail($email): ?string
-    {
-        $this->email = $email;
-    }
-
 }
