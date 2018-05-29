@@ -98,6 +98,7 @@ h1  {
 #carte {
     padding: 2%;
     padding-right: 6%;
+    overflow: hidden;
 
 }
 
@@ -119,6 +120,16 @@ h1  {
     padding-top: 2%;
     padding-left: 2%;
 }
+
+#titresfooter {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: 'robotoregular';
+
+}
+
 h5{
     font-size: 18px;
 }
@@ -153,6 +164,8 @@ nav {
     list-style: none;
     justify-content: center;
     margin-top: 10px;
+    padding:0;
+
 }
 
 li {
@@ -829,4 +842,130 @@ input {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;}
+
+/*MEDIA QUERIES HEADER/FOOTER GILDAS*/
+
+@media screen and (max-width: 1199px)
+
+{
+
+    #panier {
+        position: relative;
+        float: right;
+        right: 5%;
+        top: 1px;
+        width:30px;
+    }
+
+    #liens {
+        font-size: 0.9em;
+        position: relative;
+
+    }
+
+    #liens a {
+        padding: 0.5%;
+        position: relative;
+        top: 25px;
+        float: right;
+        left: 1.8%;
+        font-family: 'robotoregular';
+
+    }
+
+    li {
+        font-size: 22px;
+
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 640px) {
+
+    #panier {
+        position: relative;
+        float: right;
+        right: 5%;
+        top: 1px;
+        width:30px;
+    }
+
+    #liens {
+        font-size: 0.7em;
+        position: relative;
+        display: inline-block;
+        width: 250px;
+        float: right;
+        top: 5px;
+
+
+    }
+
+    #liens a {
+        padding-right: 2.9%;
+        position: relative;
+        left: 8%;
+        font-family: 'robotoregular';
+
+    }
+
+
+    li {
+        font-size: 20px;
+        color: #000000;
+        padding: 0px 10px;
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 460px) {
+
+    #panier {
+        position: relative;
+        float: right;
+        right: 5%;
+        top: 1px;
+        width:30px;
+    }
+
+    #liens {
+        font-size: 0.7em;
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        float: none;
+        top: 0;
+    }
+
+    #liens a {
+        padding-right: 2.9%;
+        position: relative;
+        font-family: 'robotoregular';
+        margin: 0 auto;
+        top:0;
+
+
+    }
+
+
+    li {
+        font-size: 12px;
+        color: #000000;
+        margin:0 auto;
+    }
+
+
+
+
+
+}
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hc3NldHMvY3NzL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxpQkFBaUIsd0JBQXdCLENBQUMiLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNjb250ZW51LW9uZ2xldCB7ZmxvYXQ6IHJpZ2h0ICFpbXBvcnRhbnQ7fVxyXG5cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gLi9hc3NldHMvY3NzL3N0eWxlLmNzcyJdLCJzb3VyY2VSb290IjoiIn0=*/
