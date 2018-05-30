@@ -12,19 +12,31 @@ class PageSearchPdtController extends Controller
      */
     public function index()
     {
-        return $this->render('page_search_pdt/index.html.twig', [
-            'controller_name' => 'PageSearchPdtController',
-        ]);
+        $files = glob("img/*.*");
+
+        return $this->render('page_search_pdt/index.html.twig', $files
+        );
+
+
     }
 
 
-//    public function afficheImg()
-//    {
-//        $files = glob("img/*.*"); //precise le repertoire
+
+
+
+
+
+
+
+
+    ///..............NE FONCTIONNE PAS....................//
 //
-//
-//        foreach ($files as $key => $value) {
-//            echo '<img src="'. $value .'"/>';
+//    public function affichageImg(){
+//        $affichageImgBoucle="";
+//        for ($i = 0; $i<count($files); $i++){
+//            $affichageImgBoucle.="image"."=>"."$files[$i]".",";
 //        }
+//       return $affichageImgBoucle;
 //    }
+
 }
