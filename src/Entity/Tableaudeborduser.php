@@ -16,15 +16,17 @@ class Tableaudeborduser
      */
     private $id;
 
-       /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $prenom;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $nom;
+    private $nomlivraison;
+
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $nomfacturation;
 
 
     /**
@@ -42,23 +44,11 @@ class Tableaudeborduser
      */
     private $prenomlivraison;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $nomlivraison;
-
 
     /**
      * @ORM\Column(type="string", length=255)
      */
     private $prenomfacturation;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $nomfacturation;
-
-
 
 
 
@@ -169,7 +159,7 @@ class Tableaudeborduser
 
     public function setNomLivraison(string $nomlivraison): self
     {
-        $this->nom = $nomlivraison;
+        $this->nomlivraison = $nomlivraison;
 
         return $this;
     }
@@ -195,7 +185,7 @@ class Tableaudeborduser
 
     public function setNomFacturation(string $nomfacturation): self
     {
-        $this->nom = $nomfacturation;
+        $this->nomfacturation = $nomfacturation;
 
         return $this;
     }
@@ -244,7 +234,7 @@ class Tableaudeborduser
         return $this->cplivraison;
     }
 
-    public function setCp(?string $cplivraison): self
+    public function setCpLivraison(?string $cplivraison): self
     {
         $this->cplivraison = $cplivraison;
 
