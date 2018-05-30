@@ -27,6 +27,8 @@ class EspaceProfessionnelController extends Controller
      */
     public function formulaireAjoutPdt(Request $requete)
     {
+
+        //////////////////////FOMULAIRE 1//////////////////////////
         $formProduit = new EspaceProfessionnel();
 
         $formulaireProduit = $this->createFormBuilder($formProduit)
@@ -49,17 +51,8 @@ class EspaceProfessionnelController extends Controller
             $envoiBDD->persist($formProduit);
             $envoiBDD->flush();
         }
+        //////////////////////////////FORMULAIRE 2////////////////////////////////////////////////////////
 
-        return $this->render( 'espace_professionnel/index.html.twig',
-            array(
-                'formulaireProduit' => $formulaireProduit->createView()
-            )
-        );
-
-    }
-
-    public function formulaireAjoutEvent(Request $requete)
-    {
         $formEvent = new EspaceProfessionnel();
 
         $formulaireEvent = $this->createFormBuilder($formEvent)
@@ -81,11 +74,19 @@ class EspaceProfessionnelController extends Controller
             $envoiBDD->flush();
         }
 
-        return $this->render(
-            'espace_professionnel/index.html.twig',
+
+        /////////////////////////////////////////////////////////
+
+
+
+        return $this->render( 'espace_professionnel/index.html.twig',
             array(
+                'formulaireProduit' => $formulaireProduit->createView(),
                 'formulaireEvent' => $formulaireEvent->createView()
             )
         );
+
     }
+
+
 }
