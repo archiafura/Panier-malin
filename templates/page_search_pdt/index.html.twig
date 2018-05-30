@@ -15,19 +15,11 @@
 
 
 
-    {#$files = glob("img/icones/*.*");#}
 
-    {#foreach ($files as $key => $value) {#}
-    {#echo '<img src="'. $value .'"/>';#}
-    {#}#}
 
-    {#{% set files = glob("img/icones/*.*") %}#}
 
-    {#{% for file in files %}#}
-    {#<img src="'. {{ file }} .'"/>#}
-    {#{% endfor %}#}
-
-    <main>
+<div id="conteneurMainPdt">
+    <main id="mainPagePdt">
         <div class="iconePdt">
             <label for="poireau">Poireau</label>
             <a href="">
@@ -154,5 +146,6 @@
             </a>
         </div>
     </main>
+</div>
 
 {% endblock %}
