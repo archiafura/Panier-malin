@@ -10,22 +10,22 @@
                 <div class="col-sm-12 col-lg-2">
                     <h3>Mes infos</h3>
                     <div id="rosecompte">
-                        <label for="prénom">Prénom</label><br/>
+                        <label id="eperso" for="prénom">Prénom</label>
                         {{ form_errors(formulaire.prenominfos) }}
                         {{ form_widget(formulaire.prenominfos) }}
-                            <label for="nom">Nom</label><br/>
+                            <label id="eperso" for="nom">Nom</label>
                         {{ form_errors(formulaire.nominfos) }}
                         {{ form_widget(formulaire.nominfos) }}
-                            <label for="tel">Tél</label><br/>
+                            <label id="eperso" for="tel">Tél</label>
                         {{ form_errors(formulaire.telephone) }}
                         {{ form_widget(formulaire.telephone) }}
-                            <label for="Email">E-mail</label><br/>
+                            <label id="eperso" for="Email">E-mail</label>
                         {{ form_errors(formulaire.emailinfos) }}
                         {{ form_widget(formulaire.emailinfos) }}
-                            <label for="mdp">Mot de passe</label><br/>
+                            <label id="eperso" for="mdp">Mot de passe</label>
                         {{ form_errors(formulaire.mdpinfos) }}
                         {{ form_widget(formulaire.mdpinfos) }}
-                            <label for="cmdp">Confirmation du mot de passe</label><br/>
+                            <label id="eperso" for="cmdp">Confirmation du mot de passe</label>
                         {{ form_errors(formulaire.confirmmdpinfos) }}
                         {{ form_widget(formulaire.confirmmdpinfos) }}
                     </div>
@@ -73,20 +73,20 @@
                     <div id="vert">
 
                         <article>
-                                <label for="prénom">Prénom</label><br/>
+                                <label id="eperso" for="prénom">Prénom</label>
                                 {{ form_errors(formulaire.prenomlivraison) }}
                                 {{ form_widget(formulaire.prenomlivraison) }}
-                            <label for="nom">Nom</label><br/>
+                            <label id="eperso" for="nom">Nom</label>
                             {{ form_errors(formulaire.nomlivraison) }}
                             {{ form_widget(formulaire.nomlivraison) }}
-                            <label for="adresse">Adresse de livraison</label><br/>
+                            <label id="eperso" for="adresse">Adresse de livraison</label>
                             {{ form_errors(formulaire.livraison) }}
                             {{ form_widget(formulaire.livraison) }}
 
-                                <label for="cp">Code Postal</label><br/>
+                                <label id="eperso" for="cp">Code Postal</label>
                             {{ form_errors(formulaire.cplivraison) }}
                             {{ form_widget(formulaire.cplivraison) }}
-                                <label for="ville">Ville</label><br/>
+                                <label id="eperso" for="ville">Ville</label>
                             {{ form_errors(formulaire.villelivraison) }}
                             {{ form_widget(formulaire.villelivraison) }}
 
@@ -97,9 +97,7 @@
             <div class="row">
 
                 <div id="vertbutton" class="col-sm-12 col-lg-2">
-                    <button type="submit" id="button" value="Mettre à jour les infos">
                         {{ form_widget(formulaire.envoyer, { 'label': 'Mettre à jour les infos' }) }}
-                    </button>
                 </div>
                 <div class="offset-lg-1 col-sm-12 col-lg-5">
                     <h3 id="historique">Historique des mes commandes</h3>
@@ -120,21 +118,21 @@
                     <div id="vertfacture">
 
                         <article>
-                                <label for="prénom">Prénom</label><br/>
+                                <label id="eperso" for="prénom">Prénom</label>
                             {{ form_errors(formulaire.prenomfacturation) }}
                             {{ form_widget(formulaire.prenomfacturation) }}
-                            <label for="nom">Nom</label><br/>
+                            <label id="eperso" for="nom">Nom</label>
                             {{ form_errors(formulaire.nomfacturation) }}
                             {{ form_widget(formulaire.nomfacturation) }}
 
-                                <label for="adresse">Adresse de facturation</label><br/>
+                                <label id="eperso" for="adresse">Adresse de facturation</label>
                             {{ form_errors(formulaire.facturation) }}
                             {{ form_widget(formulaire.facturation) }}
-                            <label for="cp">Code Postal</label><br/>
+                            <label id="eperso" for="cp">Code Postal</label>
                             {{ form_errors(formulaire.cpfacturation) }}
                             {{ form_widget(formulaire.cpfacturation) }}
 
-                                <label for="ville">Ville</label><br/>
+                                <label id="eperso" for="ville">Ville</label>
                             {{ form_errors(formulaire.villefacturation) }}
                             {{ form_widget(formulaire.villefacturation) }}
                         </article>
