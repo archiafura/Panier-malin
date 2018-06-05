@@ -185,7 +185,7 @@ li:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    ;
+;
 
 }
 #imageRecherche{
@@ -264,7 +264,7 @@ li:hover {
 }
 
 #savoirplus{
-display: flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -544,13 +544,13 @@ display: flex;
 
 }
 
-#form_nom, #form_email, #form_adresse, #form_pseudo, #form_mdp, #form_prenom, #form_zip, #form_statut, #form_interet{
+/*#form_nom, #form_email, #form_adresse, #form_pseudo, #form_mdp, #form_prenom, #form_zip, #form_statut, #form_interet{
     display: flex;
     flex-direction: column;
-   margin-left: 510px;
+    margin-left: 510px;
 
 
-}
+}*/
 
 #titlinscript{
     text-align: center;
